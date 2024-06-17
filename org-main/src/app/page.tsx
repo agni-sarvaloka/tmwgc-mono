@@ -5,7 +5,7 @@ import styles from './floatbar.module.css'
 export default function Home() {
 
   const renderHead = (
-  <div>
+  <div className={styles.head}>
     <b>The Meta Web3 | Global Consortium</b>
   </div> )
 
@@ -20,7 +20,7 @@ export default function Home() {
   </div>
 
   const renderTail = (
-  <div>
+  <div className={styles.tail}>
     <p>Privacy Policies</p>
     <p>Terms & Conditions</p>
     <p>Contact Helpdesk</p>

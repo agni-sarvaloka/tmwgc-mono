@@ -1,4 +1,26 @@
+.head {
+    display: grid;
+    grid-auto-flow: column;
+    /* background-color: rgb(244, 153, 33); */
+    justify-content: space-around;
+    padding: 12px 0px;
+}
+
 .floatbar {
     display: grid;
     grid-auto-flow: column;
+    /* background-color: antiquewhite; */
+    justify-content: space-around;
+    padding: 12px 0px;
+}
+
+.tail {
+    display: grid;
+    grid-auto-flow: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: antiquewhite; */
+    justify-content: space-around;
 }
