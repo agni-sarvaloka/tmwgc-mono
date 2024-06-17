@@ -9,6 +9,13 @@
                 }
             },
             {
+                "label": "Blockchain Solutions",
+                "src": {
+                    "icon": "/",
+                    "push": "https://lab.tmwgc.com"
+                }
+            },
+            {
                 "label": "Education & Research",
                 "src": {
                     "icon": "/",
@@ -19,7 +26,7 @@
                 "label": "Media & Communications",
                 "src": {
                     "icon": "/",
-                    "push": "https://media.tmwgc.com"
+                    "push": "https://press.tmwgc.com"
                 }
             },
             {
