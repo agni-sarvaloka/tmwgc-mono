@@ -1,0 +1,41 @@
+{
+    "controls": {
+        "floatbar": [
+            {
+                "label": "Access",
+                "src": {
+                    "icon": "/",
+                    "push": "https://sso.tmwgc.com"
+                }
+            },
+            {
+                "label": "Education",
+                "src": {
+                    "icon": "/",
+                    "push": "https://edu.tmwgc.com"
+                }
+            },
+            {
+                "label": "Media",
+                "src": {
+                    "icon": "/",
+                    "push": "https://media.tmwgc.com"
+                }
+            },
+            {
+                "label": "Governance",
+                "src": {
+                    "icon": "/",
+                    "push": "https://gov.tmwgc.com"
+                }
+            },
+            {
+                "label": "Consulting",
+                "src": {
+                    "icon": "/",
+                    "push": "https://consult.tmwgc.com"
+                }
+            }
+        ]
+    }
+}

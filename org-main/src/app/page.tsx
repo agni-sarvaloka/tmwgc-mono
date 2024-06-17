@@ -1,12 +1,23 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import config from '../config/settings.json'
+
+import styles from './floatbar.module.css'
 
 export default function Home() {
 
   const renderHead = (
   <div>
-    <b>The Meta Web3 | Global Consortium </b>
+    <b>The Meta Web3 | Global Consortium</b>
   </div> )
+
+  const floatbarCtrls = config.controls.floatbar
+
+  const floatbar = <div className={styles.floatbar}>
+    {
+      floatbarCtrls.map((ctrl,key)=>{
+    return <a href={ctrl.src.push} key={key}>{ctrl.label}</a>
+  })
+    }
+  </div>
 
   const renderTail = (
   <div>
@@ -18,6 +29,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {renderHead}
+      {floatbar}
       {renderTail}
     </main>
   );
