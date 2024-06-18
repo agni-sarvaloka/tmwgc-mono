@@ -1,0 +1,71 @@
+{
+  "controls": {
+    "menu": [
+      {
+        "label": "Forum",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Amendmemts",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Establishments",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Reports",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      }
+    ],
+    "floatbar": [
+      {
+        "label": "Inspection Comittees",
+        "src": {
+          "icon": "/",
+          "push": "https://firm.tmwgc.com"
+        }
+      },
+      {
+        "label": "Research Councils",
+        "src": {
+          "icon": "/",
+          "push": "https://lab.tmwgc.com"
+        }
+      },
+      {
+        "label": "Executive Management",
+        "src": {
+          "icon": "/",
+          "push": "https://edu.tmwgc.com"
+        }
+      },
+      {
+        "label": "Compliance Bureaus",
+        "src": {
+          "icon": "/",
+          "push": "https://press.tmwgc.com"
+        }
+      }
+    ],
+    "portal": {
+      "label": "Access",
+      "src": {
+        "icon": "/",
+        "push": "https://sso.tmwgc.com"
+      }
+    }
+  }
+}
