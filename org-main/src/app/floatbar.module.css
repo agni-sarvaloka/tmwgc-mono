@@ -17,6 +17,15 @@
   grid-gap: 64px;
 }
 
+.access {
+  display: grid;
+  grid-auto-flow: column;
+  /* background-color: rgb(244, 153, 33); */
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 12px;
+}
+
 .floatbar {
   display: grid;
   grid-auto-flow: column;
@@ -37,4 +46,16 @@
   /* background-color: antiquewhite; */
   justify-content: space-around;
   border-top: outset 0.2px #eeeeee;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .floatbar {
+    overflow-x: scroll;
+    grid-gap: 48px;
+    max-width: 85%;
+  }
 }

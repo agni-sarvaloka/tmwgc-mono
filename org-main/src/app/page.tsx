@@ -24,23 +24,59 @@ export default function Home() {
     </div>
   );
 
-  const accessPort = (
-    <Link style={{ textDecoration: "none" }} href={portCtrls.src.push}>
-      {portCtrls.label}
-    </Link>
+  const access = (
+    <div className={styles.access}>
+      <Image
+        width={24}
+        height={24}
+        src={"/icons/access.svg"}
+        alt={"access"}
+      ></Image>
+      <Link style={{ textDecoration: "none" }} href={portCtrls.src.push}>
+        {portCtrls.label}
+      </Link>
+    </div>
+  );
+
+  const brand = (
+    <Image
+      width={180}
+      height={48}
+      src={"/brand/tmwgc_brand.svg"}
+      alt={"tmwgc_brand"}
+    ></Image>
+  );
+
+  const burger = (
+    <Image
+      width={24}
+      height={24}
+      src={"/icons/burger.svg"}
+      alt={"burger"}
+    ></Image>
   );
 
   const headbar = (
     <div className={styles.head}>
-      <Image
-        width={180}
-        height={48}
-        src={"/brand/tmwgc_brand.svg"}
-        alt={"tmwgc_brand"}
-      ></Image>
+      {burger}
+      {brand}
       {menu}
-      {accessPort}
+      {access}
     </div>
+  );
+
+  const domain = (
+    <Image
+      style={{
+        position: "absolute",
+        right: 0,
+        marginRight: "16px",
+      }}
+      width={24}
+      height={24}
+      src={"/icons/domain.svg"}
+      alt={"domain"}
+    ></Image>
   );
 
   const floatbarCtrls = config.controls.floatbar;
@@ -50,14 +86,23 @@ export default function Home() {
       {floatbarCtrls.map((ctrl, key) => {
         return (
           <Link
-            style={{ textDecoration: "none", fontWeight: "300" }}
+            style={{
+              textDecoration: "none",
+              fontWeight: "300",
+              whiteSpace: "nowrap",
+            }}
             href={ctrl.src.push}
             key={key}
           >
-            {ctrl.label}
+            {ctrl.label.split(" ")[0]}
+            <br></br>
+            {ctrl.label.split(" ")[1]}
+            {` `}
+            {ctrl.label.split(" ")[2]}
           </Link>
         );
       })}
+      {domain}
     </div>
   );
 

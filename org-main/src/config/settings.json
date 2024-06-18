@@ -23,7 +23,7 @@
         }
       },
       {
-        "label": "Relations Office",
+        "label": "Office Relations",
         "src": {
           "icon": "/",
           "push": "/"
@@ -53,14 +53,14 @@
         }
       },
       {
-        "label": "Education & Research",
+        "label": "Research & Education",
         "src": {
           "icon": "/",
           "push": "https://edu.tmwgc.com"
         }
       },
       {
-        "label": "Media & Communications",
+        "label": "Press & Media",
         "src": {
           "icon": "/",
           "push": "https://press.tmwgc.com"
