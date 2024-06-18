@@ -41,7 +41,7 @@ export default function Home() {
   const brand = (
     <Image
       width={180}
-      height={48}
+      height={42}
       src={"/brand/tmwgc_brand.svg"}
       alt={"tmwgc_brand"}
     ></Image>
@@ -49,6 +49,7 @@ export default function Home() {
 
   const burger = (
     <Image
+      className={styles.burger}
       width={24}
       height={24}
       src={"/icons/burger.svg"}
@@ -56,10 +57,23 @@ export default function Home() {
     ></Image>
   );
 
+  const shift = (
+    <div className={styles.shift}>
+      <b>Overall</b>
+      <Image
+        width={24}
+        height={24}
+        src={"/icons/domain.svg"}
+        alt={"domain"}
+      ></Image>
+    </div>
+  );
+
   const headbar = (
     <div className={styles.head}>
       {burger}
       {brand}
+      {/* {shift} */}
       {menu}
       {access}
     </div>
