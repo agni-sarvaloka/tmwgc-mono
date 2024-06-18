@@ -1,3 +1,11 @@
 body {
-    font-size: 80%;
+  font-size: 80%;
+}
+
+a,
+li,
+p {
+  text-decoration: none;
+  color: gray;
+  list-style: none;
 }

@@ -1,26 +1,40 @@
 .head {
-    display: grid;
-    grid-auto-flow: column;
-    /* background-color: rgb(244, 153, 33); */
-    justify-content: space-around;
-    padding: 12px 0px;
+  display: grid;
+  grid-auto-flow: column;
+  /* background-color: rgb(244, 153, 33); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  /* background-color: rgb(244, 153, 33); */
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  grid-gap: 64px;
 }
 
 .floatbar {
-    display: grid;
-    grid-auto-flow: column;
-    /* background-color: antiquewhite; */
-    justify-content: space-around;
-    padding: 12px 0px;
+  display: grid;
+  grid-auto-flow: column;
+  /* background-color: antiquewhite; */
+  justify-content: space-around;
+  padding: 12px 0px;
+  border-top: outset 0.2px #eeeeee;
+  border-bottom: inset 0.2px #eeeeee;
 }
 
 .tail {
-    display: grid;
-    grid-auto-flow: column;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background-color: antiquewhite; */
-    justify-content: space-around;
+  display: grid;
+  grid-auto-flow: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: antiquewhite; */
+  justify-content: space-around;
+  border-top: outset 0.2px #eeeeee;
 }

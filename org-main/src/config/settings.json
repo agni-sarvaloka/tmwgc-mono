@@ -1,48 +1,85 @@
 {
-    "controls": {
-        "floatbar": [
-            {
-                "label": "Consulting Services",
-                "src": {
-                    "icon": "/",
-                    "push": "https://firm.tmwgc.com"
-                }
-            },
-            {
-                "label": "Blockchain Solutions",
-                "src": {
-                    "icon": "/",
-                    "push": "https://lab.tmwgc.com"
-                }
-            },
-            {
-                "label": "Education & Research",
-                "src": {
-                    "icon": "/",
-                    "push": "https://edu.tmwgc.com"
-                }
-            },
-            {
-                "label": "Media & Communications",
-                "src": {
-                    "icon": "/",
-                    "push": "https://press.tmwgc.com"
-                }
-            },
-            {
-                "label": "Governance Board",
-                "src": {
-                    "icon": "/",
-                    "push": "https://gov.tmwgc.com"
-                }
-            },
-            {
-                "label": "Access",
-                "src": {
-                    "icon": "/",
-                    "push": "https://sso.tmwgc.com"
-                }
-            }
-        ]
+  "controls": {
+    "menu": [
+      {
+        "label": "Foundational Thoughts",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Operational Divisions",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Community Centre",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Relations Office",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
+        "label": "Resource Hub",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      }
+    ],
+    "floatbar": [
+      {
+        "label": "Consulting Services",
+        "src": {
+          "icon": "/",
+          "push": "https://firm.tmwgc.com"
+        }
+      },
+      {
+        "label": "Blockchain Solutions",
+        "src": {
+          "icon": "/",
+          "push": "https://lab.tmwgc.com"
+        }
+      },
+      {
+        "label": "Education & Research",
+        "src": {
+          "icon": "/",
+          "push": "https://edu.tmwgc.com"
+        }
+      },
+      {
+        "label": "Media & Communications",
+        "src": {
+          "icon": "/",
+          "push": "https://press.tmwgc.com"
+        }
+      },
+      {
+        "label": "Governance Board",
+        "src": {
+          "icon": "/",
+          "push": "https://gov.tmwgc.com"
+        }
+      }
+    ],
+    "portal": {
+      "label": "Access",
+      "src": {
+        "icon": "/",
+        "push": "https://sso.tmwgc.com"
+      }
     }
+  }
 }
