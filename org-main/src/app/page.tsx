@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import config from "../config/settings.json";
-import styles from "./floatbar.module.css";
+import styles from "./page.module.css";
 
 export default function Home() {
   const menuCtrls = config.controls.menu;
@@ -59,7 +59,12 @@ export default function Home() {
 
   const shift = (
     <div className={styles.shift}>
-      <b>Overall</b>
+      <p>Overall</p>
+    </div>
+  );
+
+  const swap = (
+    <div>
       <Image
         width={24}
         height={24}
@@ -69,12 +74,20 @@ export default function Home() {
     </div>
   );
 
+  const action = (
+    <div className={styles.action}>
+      <button>Become a partner</button>
+    </div>
+  );
+
   const headbar = (
     <div className={styles.head}>
       {burger}
       {brand}
-      {/* {shift} */}
+      {shift}
       {menu}
+      {swap}
+      {action}
       {access}
     </div>
   );
@@ -128,10 +141,56 @@ export default function Home() {
     </div>
   );
 
+  const hero = (
+    <div className={styles.hero}>
+      <div className={styles.wrapper}>
+        <h1>
+          Building an autonomous, transparent and <br></br> a truly
+          decentralized future for the world.
+        </h1>
+        <p>
+          We are an open-source community foundation pioneering in the space of
+          distributed spatial computing with a vision to advance the
+          foundational infrastructures, ecosystems and mainstream market for
+          spatial computing
+        </p>
+      </div>
+    </div>
+  );
+
+  const shouter = (
+    <div className={styles.shouter}>
+      <p>
+        We're excited to announce the launch of our metanet presales. The
+        whitepaper is officially approved through community voting and the
+        proposal has been ratified by 30K active voters. We thank you all for
+        the overwhelmimg support and excitement
+      </p>
+      <p>Visit Website</p>
+      <p>close X</p>
+    </div>
+  );
+
+  const context = (
+    <div className={styles.context}>
+      <div className={styles.wrap}>
+        <p>Relations</p>
+        <p>Announcements</p>
+      </div>
+      <div className={styles.wrap}>
+        <p>Preferences</p>
+        <p>Heldesk</p>
+      </div>
+    </div>
+  );
+
   return (
     <main className={styles.main}>
+      {shouter}
+      {context}
       {headbar}
       {floatpanel}
+      {hero}
       {tailnote}
     </main>
   );

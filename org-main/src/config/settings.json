@@ -16,6 +16,13 @@
         }
       },
       {
+        "label": "Capabilities",
+        "src": {
+          "icon": "/",
+          "push": "/"
+        }
+      },
+      {
         "label": "Community",
         "src": {
           "icon": "/",

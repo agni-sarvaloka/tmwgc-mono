@@ -4,8 +4,19 @@ body {
 
 a,
 li,
-p {
+p,
+b,
+h1 {
   text-decoration: none;
   color: gray;
   list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  font: var(--Jakarta);
+  color: white;
+  background-color: gray;
+  padding: 8px 16px;
 }

@@ -128,10 +128,20 @@ export default function Home() {
     </div>
   );
 
+  const hero = (
+    <div className={styles.hero}>
+      <h1>
+        Building an autonomous, transparent and truly decentranlized future for
+        immersive spatial computing
+      </h1>
+    </div>
+  );
+
   return (
     <main className={styles.main}>
       {headbar}
       {floatpanel}
+      {hero}
       {tailnote}
     </main>
   );
