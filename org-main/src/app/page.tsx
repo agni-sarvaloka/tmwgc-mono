@@ -161,7 +161,7 @@ export default function Home() {
   const shouter = (
     <div className={styles.shouter}>
       <p>
-        We're excited to announce the launch of our metanet presales. The
+        We are excited to announce the launch of our metanet presales. The
         whitepaper is officially approved through community voting and the
         proposal has been ratified by 30K active voters. We thank you all for
         the overwhelmimg support and excitement
