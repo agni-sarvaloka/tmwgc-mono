@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import config from "../config/settings.json";
+import writer from "../config/writer.json";
+
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -87,6 +89,8 @@ export default function Home() {
       {shift}
       {menu}
       {swap}
+      <p>Create</p>
+
       {action}
       {access}
     </div>
@@ -184,6 +188,14 @@ export default function Home() {
     </div>
   );
 
+  const write = writer.features;
+
+  const features = (
+    <div className={styles.features}>
+      <h1>We're the community</h1>
+    </div>
+  );
+
   return (
     <main className={styles.main}>
       {shouter}
@@ -191,6 +203,7 @@ export default function Home() {
       {headbar}
       {floatpanel}
       {hero}
+      {features}
       {tailnote}
     </main>
   );
