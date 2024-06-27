@@ -1,0 +1,50 @@
+.overpanel {
+	background-color: white;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	margin-top: 200px;
+	align-content: start;
+}
+
+.iconwrapper {
+	display: grid;
+	justify-content: start;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 6px;
+	cursor: pointer;
+}
+
+.title {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.closeicon {
+	display: grid;
+	justify-content: center;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 6px;
+	cursor: pointer;
+}
+
+.closeicon a {
+	font-weight: 600;
+}
+
+.menu {
+	display: grid;
+	grid-gap: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		width: 50vw;
+	}
+}

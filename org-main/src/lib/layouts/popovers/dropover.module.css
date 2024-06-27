@@ -1,0 +1,36 @@
+.popover {
+	background-color: white;
+	position: fixed;
+	height: 30vh;
+	width: 10vw;
+	display: grid;
+	align-content: start;
+	align-self: center;
+	justify-self: center;
+	left: 80%;
+	right: 40%;
+	top: 25%;
+	padding: 12px 32px;
+	border: inset 2px #e1e1e1;
+}
+
+.title {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.closeicon {
+	display: grid;
+	justify-content: center;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 6px;
+	cursor: pointer;
+}
+
+.closeicon a {
+	font-weight: 600;
+}

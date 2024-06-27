@@ -1,0 +1,36 @@
+.hero {
+	display: grid;
+	grid-auto-flow: row;
+	/* background-color: antiquewhite; */
+	justify-content: space-around;
+	padding: 12px 0px;
+	border-top: outset 0.2px #eeeeee;
+	border-bottom: inset 0.2px #eeeeee;
+	align-items: center;
+	text-align: center;
+	height: 60vh;
+}
+
+.wrapper {
+	display: grid;
+	max-width: 60%;
+	place-self: center;
+}
+
+.wrapper h1 {
+	font-size: 42px;
+	line-height: 46px;
+	letter-spacing: -3px;
+}
+
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		display: grid;
+		max-width: 100%;
+		place-self: center;
+		padding: 24px;
+	}
+	.wrapper h4 {
+		font-size: 12px;
+	}
+}

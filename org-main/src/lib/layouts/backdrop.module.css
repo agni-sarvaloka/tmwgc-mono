@@ -1,0 +1,6 @@
+.backdrop {
+	background: rgba(24, 24, 24, 0.51);
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}

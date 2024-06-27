@@ -1,0 +1,132 @@
+.head {
+	display: grid;
+	grid-auto-flow: column;
+	/* background-color: rgb(244, 153, 33); */
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 16px;
+	grid-gap: 12px;
+}
+
+.shift {
+	display: grid;
+	grid-auto-flow: column;
+	background-color: #eeeeee;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2px 24px;
+	grid-gap: 8px;
+	border-radius: 100px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.shift > p {
+	line-height: 0px;
+}
+
+.menu {
+	display: grid;
+	grid-auto-flow: column;
+	/* background-color: rgb(244, 153, 33); */
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 16px;
+	grid-gap: 16px;
+}
+
+.access {
+	display: grid;
+	grid-auto-flow: column;
+	/* background-color: rgb(244, 153, 33); */
+	justify-content: space-between;
+	align-items: center;
+	grid-gap: 8px;
+	cursor: pointer;
+}
+
+.iconwrapper {
+	display: grid;
+	justify-content: center;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 6px;
+	cursor: pointer;
+}
+
+.iconwrapper button {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	text-wrap: nowrap;
+}
+
+.action {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 4px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.menu {
+		display: none;
+	}
+
+	.action {
+		display: none;
+	}
+
+	.iconwrapper {
+		display: none;
+	}
+
+	.floatbar {
+		overflow-x: scroll;
+		grid-gap: 48px;
+		max-width: 85%;
+	}
+	.shift {
+		display: none;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.menu {
+		display: none;
+	}
+
+	.iconwrapper button {
+		display: none;
+	}
+	.action {
+		display: none;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.menu {
+		display: none;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1080px) {
+	.menu {
+		display: grid;
+	}
+	.burger {
+		display: none;
+	}
+	.iconwrapper button {
+		display: grid;
+		text-wrap: nowrap;
+		grid-auto-flow: column;
+	}
+	.action {
+		display: grid;
+	}
+}

@@ -1,0 +1,7 @@
+.tail {
+	display: grid;
+	grid-auto-flow: column;
+	background-color: #eeeeee;
+	justify-content: space-around;
+	border-top: outset 0.2px #eeeeee;
+}

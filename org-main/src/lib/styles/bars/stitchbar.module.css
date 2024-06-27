@@ -1,0 +1,24 @@
+.floatbar {
+	display: grid;
+	grid-auto-flow: column;
+	/* background-color: antiquewhite; */
+	justify-content: space-around;
+	padding: 12px 0px;
+	border-top: outset 0.2px #eeeeee;
+	border-bottom: inset 0.2px #eeeeee;
+}
+
+.iconwrapper {
+	display: grid;
+	justify-content: center;
+	grid-auto-flow: column;
+	align-items: center;
+	grid-gap: 6px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.floatbar {
+		display: none;
+	}
+}

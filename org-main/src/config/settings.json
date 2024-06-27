@@ -1,86 +1,184 @@
 {
-  "controls": {
-    "menu": [
-      {
-        "label": "Foundation",
-        "src": {
-          "icon": "/",
-          "push": "/"
-        }
-      },
-      {
-        "label": "Ecosystem",
-        "src": {
-          "icon": "/",
-          "push": "/"
-        }
-      },
-      {
-        "label": "Capabilities",
-        "src": {
-          "icon": "/",
-          "push": "/"
-        }
-      },
-      {
-        "label": "Community",
-        "src": {
-          "icon": "/",
-          "push": "/"
-        }
-      },
+	"brands": {
+		"tmwgc": {
+			"load": "https://svgshare.com/i/17P8.svg"
+		},
+		"tmwcs": {
+			"load": "/"
+		},
+		"idcrs": {
+			"load": "/"
+		},
+		"dmx": {
+			"load": "/"
+		},
+		"metatrace": {
+			"load": "https://svgshare.com/i/17Ny.svg"
+		},
+		"metanet": {
+			"load": "/"
+		},
+		"metaweb": {
+			"load": "/"
+		},
+		"metagov": {
+			"load": "https://svgshare.com/i/17Pf.svg"
+		}
+	},
 
-      {
-        "label": "Resources",
-        "src": {
-          "icon": "/",
-          "push": "/"
-        }
-      }
-    ],
-    "floatbar": [
-      {
-        "label": "Consulting Services",
-        "src": {
-          "icon": "/",
-          "push": "https://firm.tmwgc.com"
-        }
-      },
-      {
-        "label": "Blockchain Solutions",
-        "src": {
-          "icon": "/",
-          "push": "https://lab.tmwgc.com"
-        }
-      },
-      {
-        "label": "Certification Programmes",
-        "src": {
-          "icon": "/",
-          "push": "https://edu.tmwgc.com"
-        }
-      },
-      {
-        "label": "News Media",
-        "src": {
-          "icon": "/",
-          "push": "https://press.tmwgc.com"
-        }
-      },
-      {
-        "label": "Governance Forum",
-        "src": {
-          "icon": "/",
-          "push": "https://gov.tmwgc.com"
-        }
-      }
-    ],
-    "portal": {
-      "label": "Access",
-      "src": {
-        "icon": "/",
-        "push": "https://sso.tmwgc.com"
-      }
-    }
-  }
+	"shoutbar": {
+		"announcement": "We are excited to announce the launch of our metanet presales. The whitepaper is officially approved through community voting and the proposal has been ratified by 30K active voters. We thank you all for the overwhelmimg support and excitement",
+		"ctrls": {
+			"primary": {
+				"label": "Visit Website",
+				"url": "/home",
+				"icon": "/icons/open.svg"
+			},
+			"secondary": {
+				"label": "Download Circular",
+				"url": "/circulars",
+				"icon": "/icons/download.svg"
+			}
+		}
+	},
+	"contextbar": {
+		"ctrls": {
+			"primaries": [
+				{
+					"label": "Investor Relations",
+					"url": "/investors",
+					"icon": "/icons/user-lite.svg"
+				},
+				{
+					"label": "Press Releases",
+					"url": "/media",
+					"icon": "/icons/feather-lite.svg"
+				}
+			],
+			"secondaries": [
+				{
+					"label": "Preferences",
+					"url": "/preferences",
+					"icon": "/icons/settings-lite.svg"
+				},
+				{
+					"label": "Assistance",
+					"url": "/helpdesk",
+					"icon": "/icons/phone-lite.svg"
+				}
+			]
+		}
+	},
+	"headbar": {
+		"menu": [
+			{
+				"label": "Ecosystem",
+				"src": {
+					"icon": "/",
+					"push": "/"
+				}
+			},
+			{
+				"label": "Capabilities",
+				"src": {
+					"icon": "/",
+					"push": "/"
+				}
+			},
+
+			{
+				"label": "Resources",
+				"src": {
+					"icon": "/",
+					"push": "/"
+				}
+			}
+		],
+		"port": {
+			"label": "Access",
+			"src": {
+				"icon": "/",
+				"push": "https://sso.tmwgc.com"
+			}
+		}
+	},
+	"stitchbar": {
+		"navigators": [
+			{
+				"label": "Consulting Services",
+				"icon": "/icons/open.svg",
+				"url": "https://firm.tmwgc.com"
+			},
+			{
+				"label": "Innovation Pioneers",
+				"icon": "/icons/open.svg",
+				"url": "https://lab.tmwgc.com"
+			},
+			{
+				"label": "Certification Programmes",
+				"icon": "/icons/open.svg",
+				"url": "https://edu.tmwgc.com"
+			},
+			{
+				"label": "Reliable Web3 Media",
+				"icon": "/icons/open.svg",
+				"url": "https://press.tmwgc.com"
+			},
+			{
+				"label": "Decentralized Congress",
+				"icon": "/icons/open.svg",
+				"url": "https://gov.tmwgc.com"
+			}
+		]
+	},
+	"tailbar": {
+		"ctrls": {
+			"crucials": [
+				{
+					"label": "Privacy Policies",
+					"url": "/privacy",
+					"icon": "/"
+				},
+				{
+					"label": "Terms & Conditions",
+					"url": "/t&c",
+					"icon": "/"
+				},
+				{
+					"label": "Contact",
+					"url": "/contact",
+					"icon": "/"
+				}
+			]
+		}
+	},
+	"sidepanel": {
+		"menu": [
+			{
+				"label": "Consulting Services",
+				"icon": "/icons/open.svg",
+				"url": "https://firm.tmwgc.com"
+			},
+			{
+				"label": "Innovation Pioneers",
+				"icon": "/icons/open.svg",
+				"url": "https://lab.tmwgc.com"
+			},
+			{
+				"label": "Certification Programmes",
+				"icon": "/icons/open.svg",
+				"url": "https://edu.tmwgc.com"
+			},
+			{
+				"label": "Reliable Web3 Media",
+				"icon": "/icons/open.svg",
+				"url": "https://press.tmwgc.com"
+			},
+			{
+				"label": "Decentralized Congress",
+				"icon": "/icons/open.svg",
+				"url": "https://gov.tmwgc.com"
+			}
+		]
+	}
 }
