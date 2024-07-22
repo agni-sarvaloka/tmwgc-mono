@@ -1,0 +1,5 @@
+{
+	"DB_USER": "admin-tmwgc",
+	"DB_PWD": "admin-db-super-009&",
+	"DB_STRING": "mongodb+srv://admin-tmwgc:admin-db-super-009&@tmwgc-core.da5vegd.mongodb.net/core?retryWrites=true&w=majority&appName=TMWGC"
+}

@@ -22,6 +22,7 @@ import { useState } from 'react'
 import { Sidepanel, Overpanel } from '../lib/layouts/panels'
 
 const Home = () => {
+
 	const [isShoutBarOn, setIsShoutBarOn] = useState(true)
 	const [isSidepanelOn, setIsSidepanelOn] = useState(false)
 	const [isOverpanelOn, setIsOverpanelOn] = useState(false)
@@ -30,9 +31,21 @@ const Home = () => {
 	const [activeMenu, setIsActiveMenu] = useState(false)
 	const [isBackdropOn, setIsBackdropOn] = useState(false)
 
+	const headbarfuncs = {
+		isDropoverOn,
+		setIsDropoverOn,
+		isPopoverOn,
+		setIsPopoverOn,
+		activeMenu,
+		setIsActiveMenu,
+		isOverpanelOn,
+		setIsOverpanelOn,
+		setIsSidepanelOn,
+	}
+
 	return (
 		<main className={styles.main}>
-			{isOverpanelOn && <Overpanel />}
+			{isOverpanelOn && <Overpanel />} 
 			{(isSidepanelOn || isPopoverOn) && (
 				<Backdrop
 					isBackdropOn={isBackdropOn}
@@ -54,21 +67,10 @@ const Home = () => {
 				/>
 			)}
 			<Contextbar config={settings.contextbar} />
-			<Headbar
-				isDropoverOn={isDropoverOn}
-				setIsDropoverOn={setIsDropoverOn}
-				isPopoverOn={isPopoverOn}
-				setIsPopoverOn={setIsPopoverOn}
-				activeMenu={activeMenu}
-				setIsActiveMenu={setIsActiveMenu}
-				isOverpanelOn={isOverpanelOn}
-				setIsOverpanelOn={setIsOverpanelOn}
-				setIsSidepanelOn={setIsSidepanelOn}
-				config={settings.headbar}
-			/>
+			<Headbar {...headbarfuncs} config={settings.headbar} />
 			<Stitchbar config={settings.stitchbar} />
 			<Hero />
-			{/* <Tailbar config={settings.tailbar} /> */}
+			<Tailbar config={settings.tailbar} />
 		</main>
 	)
 }
